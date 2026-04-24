@@ -410,7 +410,8 @@ h1 {
 .testimonial-card,
 .contact-form,
 .map-frame,
-.seo-notes {
+.seo-notes,
+.map-links-card {
   background: var(--surface-strong);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -572,12 +573,17 @@ h1 {
 .map-frame {
   padding: 0.7rem;
   overflow: hidden;
+  display: grid;
+  place-items: center;
 }
 
-.map-frame iframe {
+.map-links-card {
   width: 100%;
   min-height: 420px;
-  border: 0;
+  padding: 1.5rem;
+  display: grid;
+  align-content: center;
+  gap: 1rem;
   border-radius: calc(var(--radius-lg) - 6px);
 }
 
